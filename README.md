@@ -1,0 +1,1 @@
+# malafaty_store
