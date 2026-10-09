@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="متجر ملفات رقمية وقوالب عملية للتحميل.">
+  <title>ملفاتي | متجر الملفات الرقمية</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">م</span><span>ملفاتي</span></a>
+    <nav><a href="#files">الملفات</a><a href="#plans">الاشتراكات</a><a href="#payments">الدفع والاستلام</a><a href="#how">كيف يعمل؟</a></nav>
+    <a class="button button-small" href="#files">تصفح الملفات</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> ملفات رقمية تساعدك تنجز أسرع</div>
+        <h1>أدوات جاهزة.<br><span>وقت أوفر.</span></h1>
+        <p>اكتشف قوالب وأدلة رقمية عملية تساعدك في تنظيم شغلك ومحتواك ومشروعاتك الصغيرة.</p>
+        <div class="hero-actions"><a class="button" href="#files">اكتشف الملفات <span>←</span></a><a class="text-link" href="#plans">شاهد باقات الاشتراك</a></div>
+        <div class="trust-row"><span>✓ ملفات واضحة</span><span>✓ أسعار معلنة</span><span>✓ تجربة سهلة</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="floating-card card-back"><span class="mini-label">WORKSPACE</span><div class="fake-lines"><i></i><i></i><i></i></div><div class="fake-chart"><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+        <div class="floating-card card-front"><div class="file-symbol">✦</div><span class="mini-label">DIGITAL TOOLKIT</span><h3>خلي أفكارك<br>جاهزة للتنفيذ</h3><div class="pill">قوالب عملية <span>↗</span></div></div>
+        <div class="sparkle">✳</div>
+      </div>
+    </section>
+
+    <section class="stats"><div><strong>2$</strong><span>سعر الملف الواحد</span></div><div><strong>15$</strong><span>الاشتراك الشهري</span></div><div><strong>متاح دائمًا</strong><span>تصفح المنتجات في أي وقت</span></div></section>
+
+    <section id="files" class="section">
+      <div class="section-heading"><div><div class="eyebrow">مكتبة الملفات</div><h2>اختار اللي يناسب شغلك</h2><p>ملفات رقمية جاهزة لتسهيل مهامك اليومية.</p></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن ملف..." aria-label="ابحث عن ملف"></label></div>
+      <div class="filters" id="filters"><button class="filter active" data-category="الكل">الكل</button><button class="filter" data-category="قوالب">قوالب</button><button class="filter" data-category="Excel">Excel</button><button class="filter" data-category="تسويق">تسويق</button><button class="filter" data-category="أدلة">أدلة</button><button class="filter" data-category="تنظيم">تنظيم</button></div>
+      <div class="product-grid" id="product-grid"><div class="loading">جارٍ تحميل الملفات...</div></div>
+      <p class="demo-note">أرفقنا ملفات نموذجية قابلة للتعديل داخل المشروع، لكن تنزيل الملفات بعد الدفع غير مفعّل حتى الآن.</p>
+    </section>
+
+    <section id="plans" class="section plans-section">
+      <div class="center-heading"><div class="eyebrow">باقات واضحة</div><h2>اشتري ملفًا أو اشترك شهريًا</h2><p>اختر طريقة الوصول المناسبة لك.</p></div>
+      <div class="plan-grid">
+        <article class="plan"><div class="plan-top"><span class="plan-icon">▤</span><span class="plan-tag">شراء مرة واحدة</span></div><h3>ملف واحد</h3><p>لما تحتاج أداة محددة.</p><div class="price"><strong>2$</strong><span>/ للملف</span></div><ul><li>شراء ملف محدد</li><li>معاينة وصف المنتج</li><li>تنزيل بعد تأكيد الدفع</li></ul><button class="button button-outline" onclick="document.querySelector('#files').scrollIntoView({behavior:'smooth'})">اختار ملفًا</button></article>
+        <article class="plan featured"><div class="popular">الأكثر مرونة</div><div class="plan-top"><span class="plan-icon">✦</span><span class="plan-tag">اشتراك شهري</span></div><h3>الوصول الشهري</h3><p>لمن يستخدم مكتبة الملفات باستمرار.</p><div class="price"><strong>15$</strong><span>/ شهريًا</span></div><ul><li>الوصول إلى الملفات المشمولة بالباقة</li><li>إدارة الاشتراك</li><li>إلغاء وفق شروط الخدمة</li></ul><button class="button" onclick="startCheckout('monthly')">اختار الاشتراك <span>←</span></button></article>
+      </div>
+      <p class="payment-note">الدفع الحقيقي غير مفعّل في هذه النسخة. لن يتم تحصيل أي أموال حتى يتم ربط بوابة دفع معتمدة.</p>
+    </section>
+
+    <section id="payments" class="section payments-section">
+      <div class="section-heading">
+        <div><div class="eyebrow">الدفع واستلام الأرباح</div><h2>طريقة الدفع والتحويل للمحفظة</h2><p>جهزنا مكان عرض طريقة الدفع، لكن لازم ربط مزود دفع معتمد قبل استقبال أي أموال.</p></div>
+      </div>
+      <div class="payment-flow">
+        <article class="payment-step"><span class="payment-step-icon">01</span><div><h3>العميل يدفع من الموقع</h3><p>بوابة دفع إلكترونية معتمدة تعالج عملية شراء الملف أو الاشتراك وتؤكد نجاح الدفع.</p><span class="status-pill status-pending">بانتظار ربط بوابة الدفع</span></div></article>
+        <div class="flow-arrow" aria-hidden="true">←</div>
+        <article class="payment-step"><span class="payment-step-icon">02</span><div><h3>استلام الأرباح</h3><p>يتم تحديد وجهة استلام الأرباح من لوحة مزود الدفع حسب الخيارات المتاحة لحسابك.</p><span class="status-pill">حسب شروط مزود الدفع</span></div></article>
+        <div class="flow-arrow" aria-hidden="true">←</div>
+        <article class="payment-step"><span class="payment-step-icon">03</span><div><h3>Orange Cash</h3><p>يمكن استخدام رقم المحفظة للاستلام فقط إذا أكد مزود الدفع رسميًا دعم التحويل إليها. لا تدخل رقمك هنا قبل تفعيل الخدمة.</p><span class="status-pill status-pending">لم يتم التفعيل بعد</span></div></article>
+      </div>
+      <article class="paypal-card">
+        <div class="paypal-mark" aria-hidden="true">P</div>
+        <div class="paypal-copy"><h3>الدفع عبر PayPal</h3><p>تمت إضافة PayPal كخيار دفع مقترح. الزر لن يحصّل أموالًا حقيقية حتى يتم إعداد حساب PayPal Business مؤهل وربط التكامل الرسمي والتحقق من الدفع على الخادم.</p><span class="status-pill status-pending">بانتظار إعداد حساب PayPal والتكامل</span></div>
+        <button class="paypal-button" type="button" onclick="startPayPalSetup()">تجهيز PayPal</button>
+      </article>
+      <div class="payment-warning"><strong>مهم:</strong> هذا متجر تجريبي للمعاينة فقط؛ لا يجمع أموالًا ولا يتيح تنزيل ملفات مدفوعة. بعد تفعيل حساب دفع مؤهل، يجب التأكد من خيارات السحب المتاحة في مصر؛ لا يوجد ضمان للتحويل المباشر من PayPal إلى Orange Cash.</div>
+    </section>
+
+    <section id="how" class="how-section"><div><div class="eyebrow">ببساطة</div><h2>من الاختيار إلى الاستخدام</h2><p>واجهة سهلة تساعد العميل على معرفة ما يشتريه قبل الدفع.</p></div><div class="steps"><div><span>01</span><h3>تصفح</h3><p>ابحث عن الملف المناسب.</p></div><div><span>02</span><h3>راجع التفاصيل</h3><p>اقرأ الوصف والسعر بوضوح.</p></div><div><span>03</span><h3>ادفع بأمان</h3><p>بعد تفعيل بوابة الدفع، يتم تأكيد العملية قبل التنزيل.</p></div></div></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-icon">م</span><span>ملفاتي</span></a><span>© <span id="year"></span> ملفاتي — متجر ملفات رقمية</span><div><a href="mailto:support@example.com">تواصل معنا</a><a href="/privacy.html">الخصوصية</a><a href="/terms.html">الشروط والاسترداد</a></div></footer>
+  <div class="product-modal" id="product-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <article class="product-modal-card">
+      <button class="modal-close" id="modal-close" type="button" aria-label="إغلاق">×</button>
+      <span class="category-badge" id="modal-category"></span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div class="modal-details" id="modal-details"></div>
+      <div class="modal-footer"><strong id="modal-price"></strong><button class="button" id="modal-buy" type="button">متابعة الشراء</button></div>
+      <p class="modal-disclaimer">المتجر تجريبي؛ زر الشراء لا ينفذ عملية دفع حقيقية حاليًا.</p>
+    </article>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
